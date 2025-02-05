@@ -1,0 +1,531 @@
+{
+	"info": {
+		"_postman_id": "044323a3-1aea-47ed-936b-7d6da6e64318",
+		"name": "Task_Management_System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37161993"
+	},
+	"item": [
+		{
+			"name": "TaskAPI",
+			"item": [
+				{
+					"name": "getalltasks",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "chandu",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tasks/getalltasks",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"getalltasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gettask",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "chandu",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tasks/gettask/{taskId}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"gettask",
+								"{taskId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getstatus",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "chandu",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/getstatus/{taskId}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"getstatus",
+								"{taskId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createtask",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "chandu",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tasks/createtask",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"createtask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uodatetask",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "chandu",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/tasks/updatetask/{taskId}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tasks",
+								"updatetask",
+								"{taskId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TeammemberAPI",
+			"item": [
+				{
+					"name": "getallmembers",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "kiran",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/teammembers/getallmembers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"teammembers",
+								"getallmembers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmember",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "kiran",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/teammembers/getmember/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"teammembers",
+								"getmember",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createmember",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/teammembers/createmember ",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"teammembers",
+								"createmember "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatemember",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/teammembers/updatemember/{empId}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"teammembers",
+								"updatemember",
+								"{empId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TaskAssignmentAPI",
+			"item": [
+				{
+					"name": "getallassignments",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "kiran",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/taskassignments/getallassignments",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"taskassignments",
+								"getallassignments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getassignment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "kiran",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/taskassignments/getassignment/{assignmentId}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"taskassignments",
+								"getassignment",
+								"{assignmentId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "assigntask",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_id\":18,\r\n    \"emp_id\":4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/taskassignments/assigntask",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"taskassignments",
+								"assigntask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatetask",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "kiran",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/taskassignments/updatetask/{assignmentId}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"taskassignments",
+								"updatetask",
+								"{assignmentId}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletetask",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "kiran",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Chandu@7079",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/taskassignments/deletetask/{assignmentId}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"taskassignments",
+								"deletetask",
+								"{assignmentId}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
